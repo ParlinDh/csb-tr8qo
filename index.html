@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Viga"
+      rel="stylesheet"
+    />
+    <title>Green.Com</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><strong
+            class="navbar-branded"
+            style="
+              color: green;
+              text-shadow: 2px 2px 0 #fafafa, 2px -2px 0 #fafafa,
+                -2px 2px 0 #fafafa, -2px -2px 0 #fafafa, 2px 0px 0 #fafafa,
+                0px 2px 0 #fafafa, -2px 0px 0 #fafafa, 0px -2px 0 #fafafa,
+                0px 0px 0px rgba(206, 206, 206, 0);
+            "
+            >Green.Com</strong
+          ></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active" id="home" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-item nav-link" href="#about">About</a>
+            <a class="nav-item nav-link" href="#member">Pricing</a>
+            <a class="nav-item nav-link" href="#testimoni">Testimoni</a>
+            <button
+              type="button"
+              class="btn btn-primary tombol"
+              data-bs-toggle="modal"
+              data-bs-target="#myModal"
+            >
+              Join Us
+            </button>
+          </div>
+        </div>
+        <!-- The Modal -->
+
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Join Us Member</h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Full name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control form-control-sm"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Address</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control form-control-sm"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Email address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control form-control-sm"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Phone Number</label
+                    >
+                    <input
+                      type="tel"
+                      class="form-control form-control-sm"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control form-control-sm"
+                      id="exampleInputPassword1"
+                    />
+                  </div>
+                  <div class="row">
+                    <div class="text-right">
+                      <button
+                        type="submit"
+                        class="btn btn-primary text-right"
+                        style="border: 5px none #1c6ea4; border-radius: 40px;"
+                      >
+                        Submit
+                      </button>
+                      <button
+                        type="submit"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                        style="border: 5px none #1c6ea4; border-radius: 40px;"
+                      >
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End The Modal -->
+      </div>
+    </nav>
+    <!-- akhir Navbar -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">
+          Let's Join To Start <span>Cultivating</span> <br />
+          Local <span>Plants</span>
+          with Hydroponics
+        </h1>
+        <!-- <a
+          href="#member"
+          style="cursor: pointer;"
+          class="btn btn-primary btn-lg tombol"
+          >Get Your Member</a
+        > -->
+      </div>
+    </div>
+    <!-- akhir Jumbotron -->
+
+    <!-- container -->
+    <div class="container">
+      <!-- info panel -->
+      <div class="row justify-content-center">
+        <div class="col-10 info-panel">
+          <div class="row">
+            <div class="col-sm">
+              <img
+                src="img/employee.png"
+                alt="Employee"
+                class="img-fluid float-left"
+              />
+              <h4>24 Hours</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="col-lg">
+              <img
+                src="img/hires.png"
+                alt="HiRes"
+                class="img-fluid float-left"
+              />
+              <h4>High-Res</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="col-lg">
+              <img
+                src="img/security.png"
+                alt="Security"
+                class="img-fluid float-left"
+              />
+              <h4>Security</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- akhir info panel -->
+
+      <!-- about -->
+      <div class="row about" id="about">
+        <div class="col-lg-6">
+          <h2>
+            <span>What</span> is <span style="color: green;">hydroponics?</span>
+          </h2>
+          <p>
+            Hidroponik adalah salah satu metode dalam budidaya menanam dengan
+            memanfaatkan air tanpa menggunakan media tanah dengan menekankan
+            pada pemenuhan kebutuhan hara nutrisi bagi tanaman. Kebutuhan air
+            pada hidroponik lebih sedikit daripada kebutuhan air pada budidaya
+            dengan tanah.
+          </p>
+        </div>
+        <div class="col-lg-5">
+          <img src="img/e.jpeg" alt="Working Space" class="img-fluid" />
+        </div>
+      </div>
+      <!-- akhir about -->
+
+      <!-- Workingspace -->
+      <div class="row workingspace">
+        <div class="col-lg-6">
+          <img src="img/humans.png" alt="Working Space" class="img-fluid" />
+        </div>
+        <div class="col-lg-5">
+          <h2>You <span>Work</span> Like at <span>Home</span></h2>
+          <p>
+            Bekerja dengan suasana hati yang lebih asik, menyenangkan dan
+            mempelajari hal baru setiap harinya.
+          </p>
+          <a href="#" class="btn btn-danger tombol">Gallery</a>
+        </div>
+      </div>
+      <!-- akhir Workingspace -->
+
+      <!-- Testimonial -->
+      <section class="testimonial" id="testimoni">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <p>
+              "Bekerja dengan suasana hati yang lebih asik dan mempelajari hal
+              baru setiap harinya."
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-6 justify-content-center d-flex">
+            <img src="img/img1.png" alt="Testimonial 1" />
+            <img src="img/img3.png" alt="Testimonial 2" class="img-main" />
+            <img src="img/img2.png" alt="Testimonial 3" />
+          </div>
+        </div>
+        <div class="row justify-content-center info-text">
+          <div class="col-lg text-center">
+            <h5>Sunny Ye</h5>
+            <p>Designer</p>
+          </div>
+        </div>
+      </section>
+      <!-- akhir Testimonial -->
+
+      <!-- Pricing -->
+      <section class="member" id="member">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <p class="fw-bolder fst-italic">
+              Join Us And Choose Your Member Package
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-12 justify-content-center d-flex">
+            <div class="member-kolom row row-cols-1 row-cols-md-3 g-">
+              <div class="col">
+                <div class="" style="width: 20rem;">
+                  <div class="card-body">
+                    <hr style="color: green; width: 50px;" />
+                    <h5 class="card-title">What will you get</h5>
+                    <ul class="benefit">
+                      <li>
+                        <svg
+                          class="check-benefit"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-check-circle-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                          />
+                        </svg>
+                        Interactive Live Session
+                      </li>
+                      <li>
+                        <svg
+                          class="check-benefit"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-check-circle-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                          />
+                        </svg>
+                        1 Month Intensive Bootcamp
+                      </li>
+                      <li>
+                        <svg
+                          class="check-benefit"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-check-circle-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                          />
+                        </svg>
+                        Applicable Real Pratical Skills
+                      </li>
+                      <li>
+                        <svg
+                          class="check-benefit"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-check-circle-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                          />
+                        </svg>
+                        Materi Level 1
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="card"
+                  style="width: 20rem; background-color: rgb(158, 162, 163);"
+                >
+                  <div
+                    class="card-body text-center"
+                    style="background-color: rgba(17, 16, 16, 0);"
+                  >
+                    <h5 class="card-title text-center text-h5">Member</h5>
+                    <hr class="member-underline" />
+                    <h6 class="text-h6">
+                      Hemat Rp 1.500.000
+                    </h6>
+                    <h5 class="text-h5">Rp 2.500.000</h5>
+                    <a href="#" class="btn btn-primary get-member"
+                      >Get your member</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="card"
+                  style="width: 20rem; background-color: rgb(158, 162, 163);"
+                >
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-center text-h5">Non Member</h5>
+                    <hr class="member-underline" />
+                    <h6 class="text-h6">
+                      Hemat Rp 2.300.000
+                    </h6>
+                    <h5 class="text-h5">Rp 4.500.000</h5>
+                    <a href="#" class="btn btn-primary get-member"
+                      >Get your member</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Akhir Pricing -->
+
+      <!-- memo -->
+      <section class="member" id="member">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <p class="fst-italic">
+              "By far the best investment you can make is in yourself. The more
+              you Learn, the more you Earn" - Warren Buffett
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- end memo -->
+    </div>
+    <!-- akhir container -->
+
+    <footer>
+      <div class="container">
+        <div class="d-flex bd-highlight">
+          <div class="p-2 w-50 bd-highlight">
+            <a
+              class="navbar-brand"
+              style="
+                color: green;
+                text-shadow: 2px 2px 0 green, 2px -2px 0 green, -2px 2px 0 green,
+                  -2px -2px 0 green, 2px 0px 0 green, 0px 2px 0 green,
+                  -2px 0px 0 green, 0px -2px 0 green,
+                  0px 0px 0px rgba(206, 206, 206, 0);
+              "
+              >Green.Com</a
+            >
+            <p class="footer-about">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+              exercitationem dolorum unde consequuntur a explicabo labore,
+              recusandae illum nesciunt praesentium sequi velit itaque,
+              doloremque nulla possimus quisquam doloribus omnis ipsa?
+            </p>
+          </div>
+          <!-- <div class="footer-hr"></div> -->
+          <div class="p-2 flex-fill bd-highlight mt-3">
+            <ul class="footer-nav">
+              <h5 class="text-h5">Navigasi</h5>
+              <li>Home</li>
+              <li>About</li>
+              <li>Pricing</li>
+              <li>Testimoni</li>
+            </ul>
+          </div>
+          <div class="p-2 flex-fill bd-highlight mt-3">
+            <ul class="footer-nav">
+              <h5 class="text-h5">Help & Guide</h5>
+              <li>Terms and conditions</li>
+              <li>Privacy Policy</li>
+              <li>Disclaimer</li>
+              <li>Contact us</li>
+            </ul>
+          </div>
+          <div class="p-2 flex-fill bd-highlight mt-3">
+            <h5 class="text-h5">Follow Us</h5>
+            <svg
+              style="color: white;"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-instagram"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+              />
+            </svg>
+            <svg
+              style="color: white;"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-facebook"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+              />
+            </svg>
+            <svg
+              style="color: white;"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-whatsapp"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+              />
+            </svg>
+            <svg
+              style="color: white;"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-youtube"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8 footer-about">
+            <p>
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Parlin Dh | All Right Reserved
+            </p>
+          </div>
+          <!-- <div class="col-sm-2">
+            <a href="#home" class="buttom-up fixed-bottom text-right"
+              ><svg
+                class="buttom-up fixed-bottom text-right"
+                style="color: rgb(87, 77, 224);"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-arrow-up-circle-fill"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"
+                /></svg
+            ></a>
+          </div> -->
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
